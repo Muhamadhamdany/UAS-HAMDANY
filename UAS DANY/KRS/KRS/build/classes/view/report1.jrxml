@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="079ff998-d3e2-4eb6-8e87-624f9099ca32">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from inputKrs]]>
+	</queryString>
+	<field name="nim" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idMatkul" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nmatkul" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="semester" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dosen" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="351" y="15" width="179" height="49" uuid="c1a0d452-3dc7-41a3-981a-ec7165114a08"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[DATA KRS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="22" width="100" height="20" uuid="914519d5-81d2-4608-9a9e-702c0ec9d735"/>
+				<text><![CDATA[nim]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="22" width="100" height="20" uuid="e50969cf-4c1b-4463-83fd-257f5e8417ef"/>
+				<text><![CDATA[nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="268" y="22" width="100" height="20" uuid="764bcf29-bbbb-421a-9ec9-15ea5b7f6c16"/>
+				<text><![CDATA[idMatkul]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="22" width="100" height="20" uuid="d64a73e7-aa01-4234-9437-ac90ad13685c"/>
+				<text><![CDATA[nmatkul]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="22" width="100" height="20" uuid="c6ad29ba-fa9d-492c-bd82-b0e3a5e5a760"/>
+				<text><![CDATA[dosen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="567" y="22" width="100" height="20" uuid="0225f785-f6f2-4392-9491-fdb32ae3d3f6"/>
+				<text><![CDATA[semester]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="53" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="14" width="100" height="20" uuid="0f389aad-3c6c-4fe5-925b-167bac65145d"/>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="14" width="100" height="20" uuid="b6831016-3589-4716-b47d-945b4a4d90e0"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="268" y="14" width="100" height="20" uuid="b3b01600-6270-4ace-9002-1f2f3d7be5e7"/>
+				<textFieldExpression><![CDATA[$F{idMatkul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="14" width="100" height="20" uuid="fcd908e2-1e2d-4b93-b3e2-cb3d4442135a"/>
+				<textFieldExpression><![CDATA[$F{nmatkul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="567" y="16" width="100" height="20" uuid="3626d907-c358-4b02-9771-2be39e5ed05d"/>
+				<textFieldExpression><![CDATA[$F{semester}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="16" width="100" height="20" uuid="4cbdf02f-af09-4d86-9211-65fa86d0ab5c"/>
+				<textFieldExpression><![CDATA[$F{dosen}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
